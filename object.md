@@ -86,3 +86,83 @@ Tipe data Array technically adalah sebuah Object tetapi Array memiliki sifat khu
 var array = [ 1, 2, 3 ] 
 console.log(typeof array) // object
 ```
+
+## Array of Object
+ 
+object bisa termasuk dalam tipe data yang berarti dapat di masukkan ke dalam array, seperti contoh di bawah ini
+
+```js
+var mobil = [
+  {merk: "BMW", warna: "merah", tipe: "sedan"}, 
+  {merk: "toyota", warna: "hitam", tipe: "box"}, 
+  {merk: "audi", warna: "biru", tipe: "sedan"}
+]
+```
+
+## Array Iteration
+array iteration merupakan method dalam array untuk melakukan perulangan data dari array, method array iteration ada banyak tapi untuk basic kita hanya perlu menggunakan 3 method ini yaitu forEach(), map() dan filter()
+
+
+**.foreach()**
+foreach method untuk array berfungsi untuk perulangan data dari array, misal kita punya array seperti di bawah ini:
+```js
+var mobil = [
+  {merk: "BMW", warna: "merah", tipe: "sedan"}, 
+  {merk: "toyota", warna: "hitam", tipe: "box"}, 
+  {merk: "audi", warna: "biru", tipe: "sedan"}
+]
+```
+lalu kita gunakan foreach seperti di bawah ini
+```js
+mobil.forEach(function(item){
+   console.log("warna : " + item.warna)
+})
+```
+
+maka akan muncul tampilan seperti di bawah ini
+
+```
+"warna" : "merah"
+"warna" : "hitam"
+"warna" : "biru"
+```
+
+**.map()**
+map method untuk array berfungsi untuk membuat array baru. misal dengan var mobil diatas kita buat kode seperti di bawah ini
+
+```js
+var arrayWarna = mobil.map(function(item){
+   return item.warna
+})
+
+console.log(arrayWarna)
+```
+
+maka akan muncul tampilan seperti di bawah ini:
+```
+["merah","hitam","biru"]
+```
+
+**.filter()**
+ 
+filter method untuk array berfungsi untuk memnyaring data yang diinginkan. misal dengan var mobil diatas kita buat kode seperti di bawah ini
+
+```js
+var arrayMobilFilter = mobil.filter(function(item){
+   return item.tipe != "sedan";
+})
+
+console.log(arrayMobilFilter)
+``` 
+maka akan muncul tampilan seperti di bawah ini:
+
+```
+[[object Object] {
+  merk: "Toyota",
+  tipe: "box",
+  warna: "hitam"
+}]
+```
+
+*Referensi:*
+- [github hacktiv8 phase 0 materials](https://github.com/hacktiv8/phase-0-activities/blob/master/modules/js-first-time.md#loopiteration)
