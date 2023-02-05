@@ -15,3 +15,5 @@ document.write(perkenalan) // Menampilkan "Nama saya John, umur saya 30 tahun, a
 ```
 contoh hasilnya :
 !['Hasil Soal 1'](asset/ex-soal1.png)
+
+kerjakan pada file [soal-1.html](soal-1.html)

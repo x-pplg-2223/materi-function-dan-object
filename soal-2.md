@@ -6,3 +6,4 @@ kerjakan soal ini pada file soal-2.html
 
 contoh hasinya :
 !['Hasil Soal 2'](asset/ex-soal2.gif)
+kerjakan pada file [soal-2.html](soal-2.html)
