@@ -23,7 +23,15 @@
     {
       // masukan kodingan anda dari sini 
       // tampilkan hasil pada input dengan id hasil
+      let Vokal = 0;
+      for (let z = 0; z < huruf.length; z++) {
+      if (huruVokal.includes(huruf[z].toLowerCase())) {
+          Vokal++;
     }
+  }
+  document.getElementById("hasil").value = Vokal;
+}
+    
   </script>
 </body>
 </html>
