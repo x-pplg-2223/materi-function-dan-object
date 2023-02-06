@@ -15,12 +15,16 @@
   <br>
   <label for="input">Jumlah Huruf Vokal Adalah</label>
   <input type="text" name="hasil" id="hasil" disabled>  
-  <!-- Sampe Sini Jangan Diubah  -->
+  <!-- Sampe Sini Jangan Diubah  --> 
 
   <script>
     const huruVokal = ["a", "i", "u", "e", "o"];
     function hitung_huruf_vokal(huruf)
     {
+    const hasil = document.getElementById('input').value;
+    const huruVokal = ["a", "i", "u", "e", "o"];
+    let hasil2 = hasil.toLowerCase().split('').filter(letter => huruVokal.includes(letter)).length;
+    document.getElementById('hasil').value = hasil2;
       // masukan kodingan anda dari sini 
       // tampilkan hasil pada input dengan id hasil
     }
