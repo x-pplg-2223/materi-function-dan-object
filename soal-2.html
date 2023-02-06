@@ -23,6 +23,10 @@
     {
       // masukan kodingan anda dari sini 
       // tampilkan hasil pada input dengan id hasil
+      const hasil = document.getElementById('input').value;
+      const a = ["a", "i", "u", "e", "o"];
+      let b = hasil.toLowerCase().split('').filter(letter => a.includes(letter)).length;
+      document.getElementById('hasil').value = b;
     }
   </script>
 </body>
