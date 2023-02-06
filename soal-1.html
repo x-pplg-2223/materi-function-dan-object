@@ -13,12 +13,16 @@
     /* 
     Tulis kode function di bawah ini
     */
+   function perkenalan(data){
+    return "Nama saya " + data.name + " umur saya " + data.age + " saya berasal dari " + data.address + " dan hobby saya " + data.hobby
+   }
+
 
 
     // Isi data dengan data masing-masing
-    var data = {name : "John" , age : 30 , address : "Jalan Pelesiran" , hobby : "Gaming" }
-    var perkenalan = introduce(data);
-    document.write(perkenalan);
+    var data = {name : "Rafi " , age : 16 , address : "Perum Cengkong Sari Indah " , hobby : "Berenang " }
+    var kenalin = perkenalan(data);
+    document.write(kenalin);
   </script>
 </body>
 </html>
