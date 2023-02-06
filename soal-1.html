@@ -12,11 +12,12 @@
     // Menampilkan "Nama saya John, umur saya 30 tahun, alamat saya di Jalan Pelesiran, dan saya punya hobby yaitu Gaming" 
     /* 
     Tulis kode function di bawah ini
-    */
-
+    */function introduce(data) {
+  return "Nama saya " + data.name + ", umur saya " + data.age + " tahun, saya tinggal di " + data.TempatTinggal + ", dan saya punya hobby, hobby yaitu " + data.hobby + ".";
+  }
 
     // Isi data dengan data masing-masing
-    var data = {name : "John" , age : 30 , address : "Jalan Pelesiran" , hobby : "Gaming" }
+    var data = { name : "Nandhika" , age : 16 , TempatTinggal : "majalaya" , hobby : "Gaming" }
     var perkenalan = introduce(data);
     document.write(perkenalan);
   </script>
