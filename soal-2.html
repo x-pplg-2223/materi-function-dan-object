@@ -18,11 +18,12 @@
   <!-- Sampe Sini Jangan Diubah  -->
 
   <script>
-    const huruVokal = ["a", "i", "u", "e", "o"];
     function hitung_huruf_vokal(huruf)
     {
-      // masukan kodingan anda dari sini 
-      // tampilkan hasil pada input dengan id hasil
+     const hasil = document.getElementById('input').value;
+     const hurufVokal = ["a", "i", "u", "e", "o"];
+     let hasil2 = hasil.toLowerCase().split('').filter(letter => hurufVokal.includes(letter)).length;
+     document.getElementById('hasil').value = hasil2;
     }
   </script>
 </body>
