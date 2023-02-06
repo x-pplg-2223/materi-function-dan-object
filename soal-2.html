@@ -23,13 +23,22 @@
     {
       // masukan kodingan anda dari sini 
       // tampilkan hasil pada input dengan id hasil
+      
+      // opsi pertama
       let Vokal = 0;
       for (let z = 0; z < huruf.length; z++) {
-      if (huruVokal.includes(huruf[z].toLowerCase())) {
-          Vokal++;
-    }
+      if (huruVokal.includes(huruf[z].toLowerCase())) 
+          Vokal++;    
+
+          document.getElementById("hasil").value = Vokal;
+    
   }
-  document.getElementById("hasil").value = Vokal;
+      // catatan opsi kedua tidak akan terbaca jika opsi 1 tidak ditutup menjadi komentar
+
+      // opsi kedua
+      const hasil = document.getElementById('input').value;
+      const hasil2 = hasil.toLowerCase().split('').filter(param1 => huruVokal.includes(param1)).length;
+      document.getElementById("hasil").value = hasil2;
 }
     
   </script>
