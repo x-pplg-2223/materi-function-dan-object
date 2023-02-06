@@ -1,4 +1,3 @@
-<!-- Kodingan dari sini jangan diubah -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,16 +13,21 @@
   <button onclick="hitung_huruf_vokal(input.value)">Hitung</button>
   <br>
   <label for="input">Jumlah Huruf Vokal Adalah</label>
-  <input type="text" name="hasil" id="hasil" disabled>  
-  <!-- Sampe Sini Jangan Diubah  -->
+  <input type="text" name="hasil" id="hasil" disabled>   
 
   <script>
     const huruVokal = ["a", "i", "u", "e", "o"];
     function hitung_huruf_vokal(huruf)
     {
-      // masukan kodingan anda dari sini 
-      // tampilkan hasil pada input dengan id hasil
+
+  let jumlahVokal = 0;
+  for (let i = 0; i < huruf.length; i++) {
+    if (huruVokal.includes(huruf[i].toLowerCase())) {
+      jumlahVokal++;
     }
+  }
+  document.getElementById("hasil").value = jumlahVokal;
+}
   </script>
 </body>
 </html>
