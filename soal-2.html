@@ -21,8 +21,11 @@
     const huruVokal = ["a", "i", "u", "e", "o"];
     function hitung_huruf_vokal(huruf)
     {
-      // masukan kodingan anda dari sini 
-      // tampilkan hasil pada input dengan id hasil
+    var hasil = document.getElementById('input').value;
+    var huruVokal = ["a", "i", "u", "e", "o"];
+    var hasil2 = hasil.toLowerCase().split('').filter(letter => huruVokal.includes(letter)).length;
+    document.getElementById('hasil').value = hasil2;
+
     }
   </script>
 </body>
