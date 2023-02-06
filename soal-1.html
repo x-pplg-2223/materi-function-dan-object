@@ -11,12 +11,15 @@
     // buatlah sebuah function yang menerima sebuah parameter berupa object dan mengembalikan sebuah string
     // Menampilkan "Nama saya John, umur saya 30 tahun, alamat saya di Jalan Pelesiran, dan saya punya hobby yaitu Gaming" 
     /* 
-    Tulis kode function di bawah ini
+    tulis code funtion di bawah ini
     */
 
 
     // Isi data dengan data masing-masing
-    var data = {name : "John" , age : 30 , address : "Jalan Pelesiran" , hobby : "Gaming" }
+    var data = {name : "nazwa sabila" , age : 16 , address : "Jln. pangkal perjuangan" , hobby : "mendengarkan musik" }
+    function introduce() {
+      return "nama saya " + data.name + ", " + "umur saya " + data.age + ", " +  "alamat saya di " + data.address + ", " + "hobby saya adalah " + data.hobby
+    }
     var perkenalan = introduce(data);
     document.write(perkenalan);
   </script>
