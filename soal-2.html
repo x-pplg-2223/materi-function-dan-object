@@ -23,7 +23,19 @@
     {
       // masukan kodingan anda dari sini 
       // tampilkan hasil pada input dengan id hasil
-    }
+    
+    const huruVokal = ["a", "i", "u", "e", "o"];
+    function hitung_huruf_vokal(huruf)
+    
+      const hasil = document.getElementById('input').value;
+      const jumlahVokal = 0;
+       for (let i = 0; i < huruf.length; i++) {
+        if ( huruVokal.includes(huruf[i].toLowerCase())){
+          jumlahVokal++;
+        }
+       }
+       document.getElementById('hasil').value = jumlahVokal;
+      }
   </script>
 </body>
 </html>
