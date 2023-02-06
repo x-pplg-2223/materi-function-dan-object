@@ -8,7 +8,6 @@
   <title>Soal 2</title>
 </head>
 <body>
-
   <label for="input">Masukkan Nama Anda</label>
   <input type="text" name="input" id="input">
   <button onclick="hitung_huruf_vokal(input.value)">Hitung</button>
@@ -22,8 +21,18 @@
     function hitung_huruf_vokal(huruf)
     {
       // masukan kodingan anda dari sini 
-      // tampilkan hasil pada input dengan id hasil
+      // tampilkan hasil pada input denga n id hasil
+      let Vokal = 0;
+      for (let A = 0; A < huruf.length; A++) 
+      {
+      if (huruVokal.includes(huruf[A].toLowerCase())) 
+      {
+          Vokal++;
+      }
+      }
+  document.getElementById("hasil").value = Vokal;
     }
+
   </script>
 </body>
 </html>
