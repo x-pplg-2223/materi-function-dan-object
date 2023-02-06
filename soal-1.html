@@ -16,8 +16,11 @@
 
 
     // Isi data dengan data masing-masing
-    var data = {name : "John" , age : 30 , address : "Jalan Pelesiran" , hobby : "Gaming" }
-    var perkenalan = introduce(data);
+    var data = {name : "Fildan" , age : 16 + "tahun", address : "Telukjambe Timur" , hobby : "Gaming" }
+    function introduce() {
+      return "Nama saya " + data.name + " umur saya " + data.age + " alamat saya berada di " + data.address + " dan hobi saya adalah " + data.hobby 
+    }
+    var perkenalan = introduce();
     document.write(perkenalan);
   </script>
 </body>
