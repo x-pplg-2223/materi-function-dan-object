@@ -12,17 +12,21 @@
   <label for="input">Masukkan Nama Anda</label>
   <input type="text" name="input" id="input">
   <button onclick="hitung_huruf_vokal(input.value)">Hitung</button>
-  <br>
+  <br>  
   <label for="input">Jumlah Huruf Vokal Adalah</label>
   <input type="text" name="hasil" id="hasil" disabled>  
   <!-- Sampe Sini Jangan Diubah  -->
 
   <script>
     const huruVokal = ["a", "i", "u", "e", "o"];
-    function hitung_huruf_vokal(huruf)
-    {
-      // masukan kodingan anda dari sini 
-      // tampilkan hasil pada input dengan id hasil
+    function hitung_huruf_vokal(huruf){
+      let Jumlahvokal = 0;
+      for (let i = 0; i <huruf.length; i++){
+        if(huruVokal.includes(huruf[i].toLowerCase())){
+          Jumlahvokal++
+        }
+      }
+      document.getElementById('hasil').value = Jumlahvokal;
     }
   </script>
 </body>
