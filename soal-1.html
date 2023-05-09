@@ -8,17 +8,16 @@
 </head>
 <body>
   <script>
-    // buatlah sebuah function yang menerima sebuah parameter berupa object dan mengembalikan sebuah string
-    // Menampilkan "Nama saya John, umur saya 30 tahun, alamat saya di Jalan Pelesiran, dan saya punya hobby yaitu Gaming" 
-    /* 
-    Tulis kode function di bawah ini
-    */
-
+    function functionsoal1(perkenalan){
+  const perkenalan1 = ` Hallo! Nama Saya ${data.name} umur saya ${data.age} alamat saya di ${data.address} dan saya punya hobi yaitu ${data.hobby} `
+   return perkenalan1
+}
+    
 
     // Isi data dengan data masing-masing
-    var data = {name : "John" , age : 30 , address : "Jalan Pelesiran" , hobby : "Gaming" }
-    var perkenalan = introduce(data);
-    document.write(perkenalan);
+    var data = {name : "patimah" , age : 15 , address : "tanjung pura" , hobby : "menulis" }
+    var perkenalan = functionsoal1(data);
+    document.write (perkenalan);
   </script>
 </body>
 </html>
