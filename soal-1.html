@@ -13,10 +13,12 @@
     /* 
     Tulis kode function di bawah ini
     */
-
+    function introduce(obj) {
+      return `hai kenalin nama saya ${obj.name},umur saya ${obj.age}, alamat saya di${obj.address}, hobby saya ${obj.hobby}`;
+    }
 
     // Isi data dengan data masing-masing
-    var data = {name : "John" , age : 30 , address : "Jalan Pelesiran" , hobby : "Gaming" }
+    var data = {name : "Rahel" , age : 16 , address : "Jalan Sangkali" , hobby : "belajar bahasa inggris" }
     var perkenalan = introduce(data);
     document.write(perkenalan);
   </script>
