@@ -1,14 +1,14 @@
 <!-- Kodingan dari sini jangan diubah -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soal 2</title>
 </head>
 <body>
-
+  
   <label for="input">Masukkan Nama Anda</label>
   <input type="text" name="input" id="input">
   <button onclick="hitung_huruf_vokal(input.value)">Hitung</button>
@@ -18,12 +18,17 @@
   <!-- Sampe Sini Jangan Diubah  -->
 
   <script>
-    const huruVokal = ["a", "i", "u", "e", "o"];
+    const hurufVokal = ["a", "i", "u", "e", "o"];
     function hitung_huruf_vokal(huruf)
     {
-      // masukan kodingan anda dari sini 
-      // tampilkan hasil pada input dengan id hasil
-    }
+      let jumlahVokal = 0;
+     for(let i = 0; i < huruf.length; i++ ) {
+      if (hurufVokal.includes(huruf[i].toLowerCase())){
+        jumlahVokal++
+      }
+     }
+     document.getElementById("hasil").value = jumlahVokal;
+    };
   </script>
 </body>
 </html>
