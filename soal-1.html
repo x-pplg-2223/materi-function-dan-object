@@ -8,15 +8,12 @@
 </head>
 <body>
   <script>
-    // buatlah sebuah function yang menerima sebuah parameter berupa object dan mengembalikan sebuah string
-    // Menampilkan "Nama saya John, umur saya 30 tahun, alamat saya di Jalan Pelesiran, dan saya punya hobby yaitu Gaming" 
-    /* 
-    Tulis kode function di bawah ini
-    */
+    function introduce(data) {
+      var introduction = `Nama Gw ${data.name} Umur ${data.age} Alamat ${data.address} Hobby ${data.hobby}`
+      return introduction;
+    }
 
-
-    // Isi data dengan data masing-masing
-    var data = {name : "John" , age : 30 , address : "Jalan Pelesiran" , hobby : "Gaming" }
+    var data = {name: "Bayu", age: 15, address: "Tanjungpura", hobby: "Nonton Anime"};
     var perkenalan = introduce(data);
     document.write(perkenalan);
   </script>
