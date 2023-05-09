@@ -18,9 +18,15 @@
   <!-- Sampe Sini Jangan Diubah  -->
 
   <script>
-    const huruVokal = ["a", "i", "u", "e", "o"];
-    function hitung_huruf_vokal(huruf)
-    {
+    const hurufVokal = ["a", "i", "u", "e", "o"];
+    function hitung_huruf_vokal(huruf){
+      let hurufvokal = 0;
+      for (let i = 0; i <huruf.length; i++){
+        if(hurufVokal.includes(huruf[i].toLowerCase())){
+          hurufvokal++
+        }
+      }
+      document.getElementById('hasil').value = hurufvokal;
       // masukan kodingan anda dari sini 
       // tampilkan hasil pada input dengan id hasil
     }
